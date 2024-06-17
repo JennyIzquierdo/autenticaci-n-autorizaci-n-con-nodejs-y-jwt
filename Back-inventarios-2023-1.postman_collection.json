@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "2d66cdd8-7bbe-455a-b75d-09d53c600d83",
+		"name": "Back-inventarios-2023-1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26297273"
+	},
+	"item": [
+		{
+			"name": "tipoequipos",
+			"item": [
+				{
+					"name": "crearTipoEquipo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Celular\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/tipoequipos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tipoequipos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerTiposEquipos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tipoequipos?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tipoequipos"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "estados",
+			"item": [
+				{
+					"name": "obtenerEstados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/estadoequipos?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"estadoequipos"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearEstado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"En Bodega\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/estadoequipos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"estadoequipos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "crearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Jenny Izquierdo\",\r\n    \"email\": \"jenny@ejemplo.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"Administrador\"\r\n\r\n    \"nombre\": \"Jorge Armando Julio\",\r\n    \"email\": \"jorge@ejemplo.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"Docente\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/usuarioequipo/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarioequipo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/usuarioequipo?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarioequipo"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "marcas",
+			"item": [
+				{
+					"name": "crearMarca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Motorola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/marcaequipos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"marcaequipos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerMarcas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/marcaequipos?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"marcaequipos"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "inventarios",
+			"item": [
+				{
+					"name": "obtenerInventarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/inventarioequipos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventarioequipos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearInventario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"ABC123\",\r\n    \"modelo\": \"Modelo1\",\r\n    \"descripcion\": \"Celular Gama Media\",\r\n    \"foto\": \"https://i.linio.com/p/e06e31b7fe53bb2274bbb3a029c9a50a-product.webp\",\r\n    \"color\": \"Morado\",\r\n    \"fechaCompra\": \"2023-03-26\",\r\n    \"precio\": 1330,\r\n    \"usuario\" :{\r\n        \"_id\": \"642098f45d81b25fbe1a5590\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"6420ae0a30b871cc670a736a\"\r\n    },\r\n    \"estado\": {\r\n        \"_id\": \"642095e85d81b25fbe1a5585\"\r\n    },\r\n    \"tipoEquipo\": {\r\n        \"_id\": \"642099225d81b25fbe1a5593\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/inventarioequipos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventarioequipos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"jgfgbiz@ejemplo.com\",\r\n    \"password\" : \"123455\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/loginusuario",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"loginusuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
